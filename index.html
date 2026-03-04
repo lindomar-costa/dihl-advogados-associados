@@ -168,12 +168,12 @@
                     <div class="p-6 text-center flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-brand-dark mb-1">Dra. Janaina Dihl</h3>
                         <p class="text-brand-accent font-bold text-[10px] uppercase tracking-widest mb-4">OAB/RS 78.463 | Fundadora</p>
-                        <p class="text-sm text-gray-600 leading-relaxed flex-grow">Especialista em Direito Trabalhista, Civil e Empresarial. Traz mais de 30 anos de vivência no mercado comercial, garantindo visão estratégica aos processos.</p>
+                        <p class="text-sm text-gray-600 leading-relaxed flex-grow">Especialista em Direito Civil. Traz mais de 15 anos de vivência no mercado comercial, garantindo visão estratégica aos processos.</p>
                     </div>
                 </div>
 
                 <div class="group bg-white rounded shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col h-full overflow-hidden">
-                    <div class="h-64 w-full bg-gray-200 overflow-hidden shrink-0relative">
+                    <div class="h-64 w-full bg-gray-200 overflow-hidden shrink-0 relative">
                         <img src="img/perfil-gabriela.jpg" alt="Dra. Gabriela Mello" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500 lazyload">
                     </div>
                     <div class="p-6 text-center flex flex-col flex-grow">
@@ -437,27 +437,57 @@
         });
 
         function acceptCookies() {
-            // Salva a decisão e esconde o banner
             localStorage.setItem('cookieConsent', 'granted');
             document.getElementById('cookie-banner').classList.add('translate-y-full');
             
-            // Avisa ao Google Tag Manager que o usuário ACEITOU (Atualiza o Consent Mode)
             gtag('consent', 'update', {
                 'ad_storage': 'granted',
                 'analytics_storage': 'granted',
                 'personalization_storage': 'granted'
             });
             
-            // Dispara um evento para as Tags que precisam desse gatilho no GTM
             window.dataLayer.push({'event': 'cookie_consent_granted'});
         }
 
         function denyCookies() {
-            // Salva a recusa e esconde o banner
             localStorage.setItem('cookieConsent', 'denied');
             document.getElementById('cookie-banner').classList.add('translate-y-full');
-            // Como no <head> nós já configuramos o default como 'denied', a plataforma de anúncios continua bloqueada.
         }
+
+        // ==========================================
+        // FILTRO ANTI-CURIOSOS (15 SEGUNDOS) - GTM
+        // ==========================================
+        document.addEventListener("DOMContentLoaded", function() {
+            // Marca o tempo exato que o site terminou de carregar
+            const tempoInicial = new Date().getTime();
+
+            // Pega todos os links que começam com "https://wa.me"
+            const botoesWhats = document.querySelectorAll('a[href^="https://wa.me"]');
+
+            botoesWhats.forEach(function(botao) {
+                botao.addEventListener('click', function() {
+                    const tempoAtual = new Date().getTime();
+                    const tempoNaPagina = tempoAtual - tempoInicial;
+
+                    window.dataLayer = window.dataLayer || [];
+
+                    // Verifica se o tempo na página é maior ou igual a 15 segundos
+                    if (tempoNaPagina >= 15000) {
+                        window.dataLayer.push({
+                            'event': 'whatsapp_qualificado',
+                            'tempo_segundos': Math.round(tempoNaPagina / 1000)
+                        });
+                        console.log("Sucesso: Lead Qualificado enviado ao GTM (" + Math.round(tempoNaPagina / 1000) + "s)");
+                    } else {
+                        window.dataLayer.push({
+                            'event': 'whatsapp_curioso',
+                            'tempo_segundos': Math.round(tempoNaPagina / 1000)
+                        });
+                        console.log("Bloqueado: Clique muito rápido (" + Math.round(tempoNaPagina / 1000) + "s)");
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
