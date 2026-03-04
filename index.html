@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        // Verifica se o usuário já havia aceitado antes. Se não, bloqueia tudo.
+        if(localStorage.getItem('cookieConsent') === 'granted') {
+            gtag('consent', 'default', {
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted',
+                'personalization_storage': 'granted'
+            });
+        } else {
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'personalization_storage': 'denied'
+            });
+        }
+    </script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janaina Dihl Advogados | Advocacia Especializada em Porto Alegre/RS</title>
+    <meta name="description" content="Atendimento presencial em Porto Alegre/RS e online para todo o Brasil. Advocacia especializada em Direito Trabalhista, Imobiliário, Condominial e Civil.">
+    
+    <link rel="icon" href="https://dihladvogados.adv.br/wp-content/uploads/2025/10/cropped-Subcabecalho-10-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="https://dihladvogados.adv.br/wp-content/uploads/2025/10/cropped-Subcabecalho-10-180x180.png" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#32373c',     
+                            primary: '#660000',  
+                            accent: '#940408'    
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Lora', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar { width: 12px; background-color: #660000; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(transparent, #ff73b0); border-radius: 50px; }
+        
+        /* Lightbox da Galeria */
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased relative">
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <header class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <div class="flex-shrink-0">
+                <a href="#">
+                    <img src="https://i.ibb.co/fd2CfTWG/Design-sem-nome-removebg-preview.png" alt="Janaina Dihl Advogados" class="h-8 md:h-10 w-auto">
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wider">
+                <a href="#sobre" class="text-gray-600 hover:text-brand-primary transition">Sobre Nós</a>
+                <a href="#equipe" class="text-gray-600 hover:text-brand-primary transition">Equipe</a>
+                <a href="#servicos" class="text-gray-600 hover:text-brand-primary transition">Serviços</a>
+                <a href="#escritorio" class="text-gray-600 hover:text-brand-primary transition">Escritório</a>
+                <a href="#contato" class="text-gray-600 hover:text-brand-primary transition">Contato</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="https://wa.me/5551999882013?text=Ol%C3%A1%2C%20visitei%20seu%20site%20e%20preciso%20de%20ajuda%20com%20meus%20direitos" target="_blank" class="bg-brand-primary hover:bg-brand-accent text-white px-5 py-2.5 rounded shadow transition flex items-center font-semibold text-sm">
+                    <i class="fab fa-whatsapp mr-2 text-lg"></i> Fale Conosco
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative bg-white pt-8 pb-16 lg:pt-16 lg:pb-32 overflow-hidden flex items-center min-h-[75vh]">
+        <div class="absolute inset-0 w-full h-full z-0 flex justify-end overflow-hidden">
+            <div class="w-full lg:w-[55%] h-full relative">
+                <img src="https://dihladvogados.adv.br/wp-content/uploads/2025/10/Ensaio-151-scaled.jpg" alt="Dra. Janaina Dihl" class="w-full h-full object-cover object-top scale-105">
+                <div class="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/70 via-20% to-transparent to-50%"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent lg:hidden"></div>
+            </div>
+        </div>
+
+        <div class="absolute top-0 left-0 w-full lg:w-[45%] h-full bg-white/95 lg:bg-white z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="w-full lg:w-[45%] text-center lg:text-left pr-6">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-brand-primary leading-tight mb-6">Advocacia Especializada e Humanizada em Porto Alegre</h1>
+                <p class="text-lg md:text-xl mb-8 text-gray-700 font-light leading-relaxed">Atendimento presencial no RS e online para todo o Brasil. Unimos competência técnica e mais de 15 anos de vivência de mercado para defender os seus interesses com excelência.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="https://wa.me/5551999882013?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="bg-brand-primary text-white px-8 py-4 rounded font-bold text-lg hover:bg-brand-accent transition shadow-lg inline-flex items-center justify-center">
+                        <i class="fab fa-whatsapp text-2xl mr-2 text-white"></i> Agendar Atendimento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 relative">
+                    <img src="https://dihladvogados.adv.br/wp-content/uploads/2025/10/Subcabecalho-9.png" alt="Janaina Dihl Advogados" class="w-full max-w-md mx-auto rounded shadow-lg p-1 bg-white lazyload">
+                    
+                    <div class="absolute -bottom-8 -right-4 md:-right-8 bg-brand-primary text-white p-6 rounded-lg shadow-xl z-20 min-w-[140px] border border-brand-accent flex flex-col items-center justify-center">
+                        <div class="flex items-baseline justify-center">
+                            <span class="text-4xl font-serif font-bold">15</span>
+                            <span class="text-2xl font-serif text-white ml-1">+</span>
+                        </div>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-gray-200 text-center mt-1">Anos de<br>Experiência</span>
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-primary mb-4">O Escritório</h2>
+                    <div class="w-16 h-1 bg-brand-accent mb-8"></div>
+                    
+                    <div class="text-base text-gray-700 leading-relaxed space-y-4">
+                        <p>O escritório <strong>Janaina Dihl Advogados</strong> nasceu com o propósito de oferecer uma advocacia especializada, estratégica e humanizada.</p>
+                        <p>Com forte atuação nas áreas <strong>trabalhista, cível, condominial e imobiliária</strong>, construímos nossa reputação baseados na competência técnica, no atendimento ágil e no compromisso de toda a nossa equipe com os resultados.</p>
+                        <blockquote class="border-l-4 border-brand-accent pl-4 italic text-brand-dark mt-6 font-medium bg-gray-50 py-3 pr-2 rounded-r shadow-sm">
+                            "Cada caso é tratado com dedicação exclusiva, porque entendemos que por trás de cada processo existe uma história que merece ser ouvida e defendida com excelência."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-sm font-bold tracking-widest text-brand-accent uppercase block mb-2">Quem Somos</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-primary">Nossa Equipe</h2>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-6 mb-6"></div>
+                <p class="text-base text-gray-600 max-w-2xl mx-auto">Profissionais qualificados unindo experiência corporativa e técnica jurídica.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
+                <div class="group bg-white rounded shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col h-full overflow-hidden">
+                    <div class="h-64 w-full bg-gray-200 overflow-hidden shrink-0 relative">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo-33ylYUqtFYJ0lJNy7MmN_0UHXoqutzuhg&s" alt="Dra. Janaina Dihl" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500 lazyload">
+                    </div>
+                    <div class="p-6 text-center flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-brand-dark mb-1">Dra. Janaina Dihl</h3>
+                        <p class="text-brand-accent font-bold text-[10px] uppercase tracking-widest mb-4">OAB/RS 78.463 | Fundadora</p>
+                        <p class="text-sm text-gray-600 leading-relaxed flex-grow">Especialista em Direito Trabalhista, Civil e Empresarial. Traz mais de 30 anos de vivência no mercado comercial, garantindo visão estratégica aos processos.</p>
+                    </div>
+                </div>
+
+                <div class="group bg-white rounded shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col h-full overflow-hidden">
+                    <div class="h-64 w-full bg-gray-200 overflow-hidden shrink-0relative">
+                        <img src="img/perfil-gabriela.jpg" alt="Dra. Gabriela Mello" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500 lazyload">
+                    </div>
+                    <div class="p-6 text-center flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-brand-dark mb-1">Dra. Gabriela Mello</h3>
+                        <p class="text-brand-accent font-bold text-[10px] uppercase tracking-widest mb-4">OAB/RS 132.205 | Associada</p>
+                        <p class="text-sm text-gray-600 leading-relaxed flex-grow">Especialista em Direito Trabalhista, com atuação incansável na defesa e resguardo dos direitos, garantindo um acompanhamento minucioso e preventivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-20 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-16">
+                <span class="text-sm font-bold tracking-widest text-brand-accent uppercase block mb-2">Nossas Especialidades</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-primary">Assessoria Jurídica Completa</h2>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-6 mb-6"></div>
+                <p class="text-base text-gray-600 max-w-2xl mx-auto">Atendimento especializado para <strong>Pessoas Físicas e Jurídicas</strong></p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch text-left">
+                <div class="p-8 border border-gray-100 rounded shadow-sm hover:shadow-xl hover:border-brand-primary transition duration-300 group flex flex-col h-full text-center">
+                    <div class="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-primary transition duration-300 shrink-0">
+                        <i class="fas fa-briefcase text-2xl text-brand-primary group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4">Direito Trabalhista</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 text-left flex-grow list-disc list-inside marker:text-brand-accent">
+                        <li>Verbas rescisórias</li>
+                        <li>Horas extras</li>
+                        <li>Assédio moral</li>
+                        <li>Assessoria ao Empregador</li>
+                    </ul>
+                </div>
+
+                <div class="p-8 border border-gray-100 rounded shadow-sm hover:shadow-xl hover:border-brand-primary transition duration-300 group flex flex-col h-full text-center">
+                    <div class="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-primary transition duration-300 shrink-0">
+                        <i class="fas fa-home text-2xl text-brand-primary group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4">Imobiliário</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 text-left flex-grow list-disc list-inside marker:text-brand-accent">
+                        <li>Compra e venda</li>
+                        <li>Locação e Despejo</li>
+                        <li>Vícios construtivos</li>
+                        <li>Usucapião</li>
+                    </ul>
+                </div>
+
+                <div class="p-8 border border-gray-100 rounded shadow-sm hover:shadow-xl hover:border-brand-primary transition duration-300 group flex flex-col h-full text-center">
+                    <div class="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-primary transition duration-300 shrink-0">
+                        <i class="fas fa-building text-2xl text-brand-primary group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4">Condominial</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 text-left flex-grow list-disc list-inside marker:text-brand-accent">
+                        <li>Inadimplência</li>
+                        <li>Conflitos vizinhos</li>
+                        <li>Assembleias</li>
+                        <li>Assessoria a Síndicos</li>
+                    </ul>
+                </div>
+
+                <div class="p-8 border border-gray-100 rounded shadow-sm hover:shadow-xl hover:border-brand-primary transition duration-300 group flex flex-col h-full text-center">
+                    <div class="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-primary transition duration-300 shrink-0">
+                        <i class="fas fa-balance-scale text-2xl text-brand-primary group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4">Direito Civil</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 text-left flex-grow list-disc list-inside marker:text-brand-accent">
+                        <li>Indenizações</li>
+                        <li>Contratos</li>
+                        <li>Responsabilidade civil</li>
+                        <li>Inventários</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://wa.me/5551999882013?text=Ol%C3%A1%2C%20visitei%20seu%20site%20e%20preciso%20de%20ajuda%20com%20meus%20direitos" target="_blank" class="inline-flex items-center bg-brand-dark hover:bg-brand-primary text-white px-8 py-3 rounded font-bold transition shadow-lg">
+                    Dúvidas sobre o seu caso? Fale Conosco
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="escritorio" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-sm font-bold tracking-widest text-brand-accent uppercase block mb-2">Estrutura</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-primary">Nosso Escritório</h2>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-6 mb-6"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://dihladvogados.adv.br/wp-content/uploads/2025/10/Ensaio-7-scaled.jpg" onclick="openLightbox(0)" class="cursor-pointer rounded-lg shadow hover:opacity-90 transition object-cover h-48 w-full gallery-img lazyload">
+                <img src="https://dihladvogados.adv.br/wp-content/uploads/2025/10/Ensaio-8-scaled.jpg" onclick="openLightbox(1)" class="cursor-pointer rounded-lg shadow hover:opacity-90 transition object-cover h-48 w-full gallery-img lazyload">
+                <img src="https://dihladvogados.adv.br/wp-content/uploads/2025/10/pagina-web.1-scaled.jpg" onclick="openLightbox(2)" class="cursor-pointer rounded-lg shadow hover:opacity-90 transition object-cover h-48 w-full gallery-img lazyload">
+                <img src="https://dihladvogados.adv.br/wp-content/uploads/2025/10/pagina-web.5-scaled.jpg" onclick="openLightbox(3)" class="cursor-pointer rounded-lg shadow hover:opacity-90 transition object-cover h-48 w-full gallery-img lazyload">
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="py-20 bg-brand-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-sm font-bold tracking-widest text-gray-300 uppercase block mb-2">Por que nos escolher</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">Nosso Diferencial</h2>
+                <div class="w-16 h-1 bg-white mx-auto mt-6 mb-6 opacity-50"></div>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 text-center items-stretch">
+                <div class="p-4 flex flex-col h-full">
+                    <i class="fas fa-user-shield text-4xl text-white mb-6 opacity-90 shrink-0"></i>
+                    <h3 class="text-xl font-bold mb-3">Atendimento</h3>
+                    <p class="text-sm font-light text-gray-200 leading-relaxed flex-grow">Atenção individual do início ao fim do processo, com comunicação clara e transparente.</p>
+                </div>
+                <div class="p-4 flex flex-col h-full">
+                    <i class="fas fa-chess-knight text-4xl text-white mb-6 opacity-90 shrink-0"></i>
+                    <h3 class="text-xl font-bold mb-3">Estratégias</h3>
+                    <p class="text-sm font-light text-gray-200 leading-relaxed flex-grow">Nossa experiência se traduz em táticas jurídicas eficazes e resultados concretos.</p>
+                </div>
+                <div class="p-4 flex flex-col h-full">
+                    <i class="fas fa-handshake text-4xl text-white mb-6 opacity-90 shrink-0"></i>
+                    <h3 class="text-xl font-bold mb-3">Compromisso</h3>
+                    <p class="text-sm font-light text-gray-200 leading-relaxed flex-grow">Seu caso é tratado como nossa prioridade máxima, com dedicação total aos objetivos.</p>
+                </div>
+                <div class="p-4 flex flex-col h-full">
+                    <i class="fas fa-gavel text-4xl text-white mb-6 opacity-90 shrink-0"></i>
+                    <h3 class="text-xl font-bold mb-3">Segurança</h3>
+                    <p class="text-sm font-light text-gray-200 leading-relaxed flex-grow">Análise técnica rigorosa garante que seus direitos estejam totalmente protegidos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-white pt-16 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-12 gap-12 mb-12 items-stretch">
+                
+                <div class="md:col-span-4 flex flex-col">
+                    <img src="https://i.ibb.co/fd2CfTWG/Design-sem-nome-removebg-preview.png" alt="Janaina Dihl Advogados" class="h-12 w-auto mb-6 object-contain self-start lazyload">
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Podemos lhe atender em qualquer demanda jurídica. Se tiver alguma dúvida, fale com a nossa equipe para que possamos direcionar o seu caso com agilidade.</p>
+                    <div class="flex space-x-3 mt-auto">
+                        <a href="https://www.facebook.com/dihladvogados.adv.br" target="_blank" class="w-10 h-10 rounded bg-gray-100 flex items-center justify-center text-brand-dark hover:bg-brand-primary hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/janainadihladvogados/" target="_blank" class="w-10 h-10 rounded bg-gray-100 flex items-center justify-center text-brand-dark hover:bg-brand-primary hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/janaina-oliveira-dihl-4833372a/" target="_blank" class="w-10 h-10 rounded bg-gray-100 flex items-center justify-center text-brand-dark hover:bg-brand-primary hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 flex flex-col">
+                    <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-brand-dark">Fale Conosco</h3>
+                    <ul class="text-sm text-gray-600 space-y-4 flex-grow">
+                        <li>
+                            <a href="https://wa.me/5551999882013?text=Ol%C3%A1%2C%20visitei%20seu%20site%20e%20preciso%20de%20ajuda%20com%20meus%20direitos" target="_blank" class="hover:text-brand-primary transition font-medium text-brand-dark">+55 (51) 99988-2013</a>
+                        </li>
+                        <li>
+                            <a href="mailto:contato@dihladvogados.adv.br" class="hover:text-brand-primary transition">contato@dihladvogados.adv.br</a>
+                        </li>
+                        <li>
+                            <span>09:00 - 12:00 | 13:30 - 18:00</span>
+                        </li>
+                        <li class="pt-2">
+                            <span class="leading-relaxed block">Av. Assis Brasil, 3535 – Sala 318, Cristo Redentor<br>Porto Alegre – RS - CEP 91010-007</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 flex flex-col">
+                    <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-brand-dark">Localização</h3>
+                    <div class="rounded-lg overflow-hidden shadow-sm flex-grow bg-gray-100 border border-gray-200 min-h-[220px] md:min-h-0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.909477861087!2d-51.1541224247498!3d-30.01075552971444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951977700deac91d%3A0xd5082fd1501cd7d4!2sJanaina%20Dihl%20Advogados!5e0!3m2!1spt-BR!2sbr!4v1772574296586!5m2!1spt-BR!2sbr" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-gray-100 border-t border-gray-200 py-6 mt-8 pb-24 md:pb-6">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col items-center text-center space-y-3">
+                <a href="/legal/privacy-policy-terms-of-service" class="text-brand-primary hover:text-brand-accent text-sm font-semibold transition underline decoration-brand-primary/30 underline-offset-4">
+                    Política de Privacidade e Termos de Uso
+                </a>
+                <p class="text-gray-500 text-xs font-semibold">© 2026 Janaina Dihl Advogados. Sociedade Individual de Advocacia OAB/RS 6.325. Todos os Direitos Reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-black/95 items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-4xl hover:text-brand-accent transition focus:outline-none">×</button>
+        <button onclick="prevImage()" class="absolute left-4 text-white text-5xl hover:text-brand-accent transition focus:outline-none p-2">‹</button>
+        <img id="lightbox-img" src="" alt="Imagem ampliada" class="max-h-[85vh] max-w-full shadow-2xl rounded-lg">
+        <button onclick="nextImage()" class="absolute right-4 text-white text-5xl hover:text-brand-accent transition focus:outline-none p-2">›</button>
+    </div>
+
+    <a href="https://wa.me/5551999882013?text=Ol%C3%A1%2C%20visitei%20seu%20site%20e%20preciso%20de%20ajuda%20com%20meus%20direitos" target="_blank" aria-label="Fale Conosco no WhatsApp" class="fixed bottom-24 md:bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl hover:bg-green-600 hover:-translate-y-1 transition-all duration-300 z-50 flex items-center justify-center focus:ring-4 focus:ring-green-300">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.1)] z-[100] transform translate-y-full transition-transform duration-500 flex flex-col md:flex-row items-center justify-between p-4 md:py-4 md:px-8 gap-4">
+        <div class="text-xs md:text-sm text-gray-600 flex-grow max-w-5xl leading-relaxed">
+            <p>Utilizamos cookies e tecnologias de medição para melhorar sua experiência, entender o tráfego e personalizar soluções. A coleta de dados só ocorrerá mediante a sua autorização ao clicar em "Aceitar". Para entender como protegemos seus dados, acesse nossa <a href="/legal/privacy-policy-terms-of-service" class="text-brand-primary font-bold hover:underline">Política de Privacidade e Termos de Uso</a>.</p>
+        </div>
+        <div class="flex space-x-3 shrink-0 w-full md:w-auto justify-end">
+            <button onclick="denyCookies()" class="px-5 py-2.5 text-sm font-semibold text-gray-600 bg-gray-100 hover:bg-gray-200 rounded transition w-full md:w-auto">Recusar</button>
+            <button onclick="acceptCookies()" class="px-5 py-2.5 text-sm font-bold text-white bg-brand-primary hover:bg-brand-accent rounded shadow transition w-full md:w-auto">Aceitar</button>
+        </div>
+    </div>
+
+    <script>
+        // Lógica da Galeria Lightbox
+        const images = [
+            "https://dihladvogados.adv.br/wp-content/uploads/2025/10/Ensaio-7-scaled.jpg",
+            "https://dihladvogados.adv.br/wp-content/uploads/2025/10/Ensaio-8-scaled.jpg",
+            "https://dihladvogados.adv.br/wp-content/uploads/2025/10/pagina-web.1-scaled.jpg",
+            "https://dihladvogados.adv.br/wp-content/uploads/2025/10/pagina-web.5-scaled.jpg"
+        ];
+        let currentIdx = 0;
+
+        function openLightbox(idx) {
+            currentIdx = idx;
+            document.getElementById('lightbox-img').src = images[currentIdx];
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function nextImage() {
+            currentIdx = (currentIdx + 1) % images.length;
+            document.getElementById('lightbox-img').src = images[currentIdx];
+        }
+
+        function prevImage() {
+            currentIdx = (currentIdx - 1 + images.length) % images.length;
+            document.getElementById('lightbox-img').src = images[currentIdx];
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox.classList.contains('active')) {
+                if (e.key === "Escape") closeLightbox();
+                if (e.key === "ArrowRight") nextImage();
+                if (e.key === "ArrowLeft") prevImage();
+            }
+        });
+
+        // ==========================================
+        // LÓGICA DO COOKIE BANNER (LGPD / CONSENT MODE)
+        // ==========================================
+        document.addEventListener("DOMContentLoaded", function() {
+            const banner = document.getElementById('cookie-banner');
+            const consent = localStorage.getItem('cookieConsent');
+
+            // Exibe o banner de forma suave se o usuário ainda não escolheu
+            if (!consent) {
+                setTimeout(() => {
+                    banner.classList.remove('translate-y-full');
+                }, 800);
+            }
+        });
+
+        function acceptCookies() {
+            // Salva a decisão e esconde o banner
+            localStorage.setItem('cookieConsent', 'granted');
+            document.getElementById('cookie-banner').classList.add('translate-y-full');
+            
+            // Avisa ao Google Tag Manager que o usuário ACEITOU (Atualiza o Consent Mode)
+            gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted',
+                'personalization_storage': 'granted'
+            });
+            
+            // Dispara um evento para as Tags que precisam desse gatilho no GTM
+            window.dataLayer.push({'event': 'cookie_consent_granted'});
+        }
+
+        function denyCookies() {
+            // Salva a recusa e esconde o banner
+            localStorage.setItem('cookieConsent', 'denied');
+            document.getElementById('cookie-banner').classList.add('translate-y-full');
+            // Como no <head> nós já configuramos o default como 'denied', a plataforma de anúncios continua bloqueada.
+        }
+    </script>
+</body>
+</html>
